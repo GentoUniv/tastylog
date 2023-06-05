@@ -17,6 +17,6 @@ jobs:
   preview:
     name: "Preview"
     runs-on: ubuntu-latest
-    step:
+    steps:
       - run: |
           echo "Hello World"
