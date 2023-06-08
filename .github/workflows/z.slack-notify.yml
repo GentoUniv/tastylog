@@ -1,6 +1,6 @@
-name: "z Slack Notify"
+name: "z Slack notify"
 
-on: 
+on:
   workflow_dispatch:
 
 jobs:
@@ -10,13 +10,13 @@ jobs:
     steps:
       - name: Slack notify
         uses: slackapi/slack-github-action@v1.24.0
-        with: 
+        with:
           channel-id: "C05BZPW2LDP"
           payload: |
             {
               "attachments": [
                 {
-                  "color": "#f2c744",
+                  "color": "#0068B7",
                   "blocks": [
                     {
                       "type": "header",
@@ -37,5 +37,5 @@ jobs:
                 }
               ]
             }
-          env:
-            SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
