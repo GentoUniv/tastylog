@@ -1,6 +1,11 @@
 name: "z Slack notify"
 
 on:
+  pull_request:
+    branches:
+      - main 
+    type:
+      - closed
   workflow_dispatch:
 
 jobs:
@@ -22,7 +27,7 @@ jobs:
                       "type": "header",
                       "text": {
                         "type": "plain_text",
-                        "text": "Message Header",
+                        "text": "プルリク結果の通知",
                         "emoji": true
                       }
                     },
@@ -30,7 +35,7 @@ jobs:
                       "type": "section",
                       "text": {
                         "type": "mrkdwn",
-                        "text": "Hello World :ghost:"
+                        "text": "`mainブランチにマージされました！`\n <${{ github.server_url }}/${{ github.repogitory }}/actions/runs/${{ github.run_id }} | Github Actions>"
                       }
                     }
                   ]
