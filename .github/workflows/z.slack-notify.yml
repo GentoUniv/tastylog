@@ -35,7 +35,7 @@ jobs:
                       "type": "section",
                       "text": {
                         "type": "mrkdwn",
-                        "text": "`mainブランチにマージされました！`\n <${{ github.server_url }}/${{ github.repogitory }}/actions/runs/${{ github.run_id }} | Github Actions>"
+                        "text": "`mainブランチにマージされました！`\n <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} | Github Actions>"
                       }
                     }
                   ]
