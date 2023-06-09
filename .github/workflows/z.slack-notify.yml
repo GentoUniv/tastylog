@@ -21,7 +21,7 @@ jobs:
             {
               "attachments": [
                 {
-                  "color": "#0068B7",
+                  "color": "#0028B7",
                   "blocks": [
                     {
                       "type": "header",
