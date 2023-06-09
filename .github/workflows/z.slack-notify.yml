@@ -27,7 +27,7 @@ jobs:
                       "type": "header",
                       "text": {
                         "type": "plain_text",
-                        "text": "プルリク結果の通知",
+                        "text": "プルリク結果の通知です！！",
                         "emoji": true
                       }
                     },
@@ -35,7 +35,7 @@ jobs:
                       "type": "section",
                       "text": {
                         "type": "mrkdwn",
-                        "text": "`mainブランチにマージされました！`\n <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} | Github Actions>"
+                        "text": "`mainブランチに正常にマージされました！`\n <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} | Github Actions>"
                       }
                     }
                   ]
