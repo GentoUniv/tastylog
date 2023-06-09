@@ -1,12 +1,9 @@
 name: "z Slack notify"
 
 on:
-  pull_request:
+  push:
     branches:
       - main 
-    type:
-      - closed
-  workflow_dispatch:
 
 jobs:
   notify:
@@ -21,7 +18,7 @@ jobs:
             {
               "attachments": [
                 {
-                  "color": "#0068B7",
+                  "color": "#0028B7",
                   "blocks": [
                     {
                       "type": "header",
