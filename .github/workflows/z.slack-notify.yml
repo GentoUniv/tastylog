@@ -1,12 +1,9 @@
 name: "z Slack notify"
 
 on:
-  pull_request:
+  push:
     branches:
       - main 
-    type:
-      - closed
-  workflow_dispatch:
 
 jobs:
   notify:
